@@ -1,5 +1,9 @@
 # Phoenix
 
+[![Lint commit message](https://github.com/yannickkirschen/phoenix/actions/workflows/commit-lint.yml/badge.svg)](https://github.com/yannickkirschen/phoenix/actions/workflows/commit-lint.yml)
+[![Release Drafter](https://github.com/yannickkirschen/phoenix/actions/workflows/release-drafter.yml/badge.svg)](https://github.com/yannickkirschen/phoenix/actions/workflows/release-drafter.yml)
+[![Unit tests](https://github.com/yannickkirschen/phoenix/actions/workflows/maven-test.yml/badge.svg)](https://github.com/yannickkirschen/phoenix/actions/workflows/maven-test.yml)
+
 ## State of development
 
 ***This framework is under heavy development and may have breaking changes
