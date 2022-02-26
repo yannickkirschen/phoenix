@@ -2,7 +2,7 @@ package sh.yannick.phoenix.common.configuration;
 
 import org.apache.commons.configuration2.Configuration;
 import org.junit.jupiter.api.*;
-import sh.yannick.phoenix.common.*;
+import sh.yannick.phoenix.common.PhoenixException;
 import sh.yannick.phoenix.common.custom.*;
 
 @DisplayName("Test loading configuration from various sources with prefixes")

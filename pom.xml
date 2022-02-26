@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sh.yannick.phoenix</groupId>
+    <artifactId>phoenix-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Phoenix</name>
+    <description>Parent pom for the Phoenix application framework.</description>
+    <url>https://phoenix.yannick.sh</url>
+
+    <modules>
+        <module>phoenix-common</module>
+        <module>phoenix-components</module>
+
+        <module>phoenix-icons</module>
+        <module>phoenix-icons-jlfgr</module>
+        <module>phoenix-icons-tango</module>
+
+        <module>phoenix-core</module>
+        <module>phoenix-layouts</module>
+
+        <module>phoenix-showcase</module>
+    </modules>
+
+    <licenses>
+        <license>
+            <name>Public Domain</name>
+            <url>https://phoenix.yannick.sh</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>yannickkirschen</id>
+            <name>Yannick Kirschen</name>
+            <email>yannickkirschen@protonmail.com</email>
+            <organization>Private</organization>
+            <organizationUrl>https://yannick.sh</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/yannickkirschen/phoenix.git</connection>
+        <developerConnection>scm:git:ssh://github.com:yannickkirschen/phoenix.git</developerConnection>
+        <url>https://github.com/yannickkirschen/phoenix</url>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
+        <reflections.version>0.10.2</reflections.version>
+        <commons.configuration.version>2.7</commons.configuration.version>
+        <commons.beanutils.version>1.9.4</commons.beanutils.version>
+
+        <slf4j.version>1.7.36</slf4j.version>
+        <log4j.version>2.17.1</log4j.version>
+
+        <lombok.version>1.18.22</lombok.version>
+
+        <junit.version>5.8.2</junit.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>${reflections.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-configuration2</artifactId>
+            <version>${commons.configuration.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons.beanutils.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <!-- JCL is used by commons-beanutils -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <!-- We want to use Log4J2 -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
+
