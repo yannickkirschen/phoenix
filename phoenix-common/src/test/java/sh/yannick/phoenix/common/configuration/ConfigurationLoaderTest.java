@@ -17,7 +17,7 @@ public class ConfigurationLoaderTest {
     @Test
     @DisplayName("Test with file system prefix")
     public void fileSystemPrefixTest() {
-        Configuration configuration = ConfigurationLoader.load("file:phoenix-common/src/test/resources/demo.properties");
+        Configuration configuration = ConfigurationLoader.load("file:src/test/resources/demo.properties");
         Assertions.assertEquals("hello", configuration.getString("message"));
     }
 

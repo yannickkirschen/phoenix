@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.*;
 
 public class PersonRepository {
-    private static final String FILE_NAME = "./persons.txt";
+    private static final String FILE_NAME = "./phoenix-showcase/persons.txt";
 
     public List<String> findAll() {
         try (Stream<String> lines = Files.lines(Paths.get(FILE_NAME))) {

@@ -9,7 +9,8 @@ public class FileSystemConfigurationLoaderTest {
     @Test
     @DisplayName("Test with valid file name")
     public void validFileNameTest() {
-        Configuration configuration = new FileSystemConfigurationLoader("phoenix-common/src/test/resources/demo.properties").load();
+        System.out.println(System.getProperty("user.dir"));
+        Configuration configuration = new FileSystemConfigurationLoader("src/test/resources/demo.properties").load();
         Assertions.assertEquals("hello", configuration.getString("message"));
     }
 

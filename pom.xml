@@ -68,6 +68,7 @@
         <lombok.version>1.18.22</lombok.version>
 
         <junit.version>5.8.2</junit.version>
+        <surefire.plugin.version>2.22.2</surefire.plugin.version>
     </properties>
 
     <dependencies>
@@ -123,5 +124,16 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Need at least 2.22.0 to support JUnit 5 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 
