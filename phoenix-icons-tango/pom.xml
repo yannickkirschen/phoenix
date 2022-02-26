@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>sh.yannick.phoenix</groupId>
+        <artifactId>phoenix-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>phoenix-icons-tango</artifactId>
+    <description>Bindings for the Tango Desktop Project theme for the Phoenix application framework.</description>
+
+    <properties>
+        <phoenix.version>${project.version}</phoenix.version>
+        <tango.version>0.8.90</tango.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>sh.yannick.phoenix</groupId>
+            <artifactId>phoenix-icons</artifactId>
+            <version>${phoenix.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.freedesktop.tango</groupId>
+            <artifactId>tango-icon-theme</artifactId>
+            <version>${tango.version}</version>
+        </dependency>
+    </dependencies>
+</project>
