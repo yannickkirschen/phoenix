@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="list-group list-group-flush">
+        {% for project in site.data.software-projects %}
+        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+           href="{{ project.link }}" target="_blank">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">{{ project.name }}</div>
+                {{ project.description }}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

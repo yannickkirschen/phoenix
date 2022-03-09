@@ -36,7 +36,7 @@ right ahead:
 - `EnvConfigurationLoader` to load resources from environment variables (
   prefix: `env`)
 
-```mermaid
+<div class="mermaid">
 classDiagram
     ConfigurationLoader <|-- ClassPathConfigurationLoader
     ConfigurationLoader <|-- FileSystemConfigurationLoader
@@ -64,7 +64,8 @@ classDiagram
     class EnvConfigurationLoader {
         +String prefix
     }
-```
+
+</div>
 
 ## Automatic loading
 
