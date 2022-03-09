@@ -1,17 +1,3 @@
 <div class="mt-4">
     <h2 class="text-center">{{ site.title }}</h2>
-
-    <div class="d-flex justify-content-center">
-        <ul class="nav d-flex justify-content-center">
-            {% assign paths = site.pages | map: "path" %}
-
-            {% for path in paths reversed %}
-            {% assign page = site.pages | where: "path", path | first %}
-
-            <li class="nav-item">
-                <a class="nav-link link-dark" href="{{ page.url }}">{{ page.title}}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
 </div>
