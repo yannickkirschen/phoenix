@@ -14,6 +14,8 @@ import java.util.*;
 import java.util.function.Consumer;
 
 public final class PhoenixApplication {
+    public static boolean MAC_OS = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
+
     private PhoenixApplication() {
     }
 
@@ -22,7 +24,7 @@ public final class PhoenixApplication {
     }
 
     public static PhoenixContext run(Collection<Consumer<SplashScreenHandle>> consumers) {
-        if ("Mac OS X".equals(System.getProperty("os.name"))) {
+        if (MAC_OS) {
             System.setProperty("apple.laf.useScreenMenuBar", "true");
         }
 

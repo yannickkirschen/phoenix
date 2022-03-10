@@ -5,15 +5,15 @@ import sh.yannick.phoenix.layouts.FillLayout;
 
 import javax.swing.*;
 
-public class PreferencesDialog extends ModalDialog {
-    public PreferencesDialog(JFrame frame) {
+public class AboutDialog extends ModalDialog {
+    public AboutDialog(JFrame frame) {
         super(frame);
 
-        setTitle("Preferences");
+        setTitle("About");
         setSize(200, 200);
         setLayout(new FillLayout());
         setLocationRelativeTo(null);
 
-        add(new JLabel("Settings"));
+        add(new JLabel("About"));
     }
 }
