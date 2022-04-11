@@ -13,11 +13,11 @@ See the [project](https://github.com/users/yannickkirschen/projects/1/views/1)
 for more details.
 
 - :heavy_check_mark: configuration
-  model ([#1](https://github.com/yannickkirschen/phoenix/issues/1))
-- :construction: basic
-  architecture ([#2](https://github.com/yannickkirschen/phoenix/issues/2))
+  model ([#2](https://github.com/yannickkirschen/phoenix/issues/2))
+- :heavy_check_mark: basic
+  architecture ([#1](https://github.com/yannickkirschen/phoenix/issues/1))
 - :x: logo ([#3](https://github.com/yannickkirschen/phoenix/issues/3))
-- :x: installation and update
+- :construction: installation and update
   routines ([#13](https://github.com/yannickkirschen/phoenix/issues/13)
   , [#14](https://github.com/yannickkirschen/phoenix/issues/14)
   , [#15](https://github.com/yannickkirschen/phoenix/issues/15)

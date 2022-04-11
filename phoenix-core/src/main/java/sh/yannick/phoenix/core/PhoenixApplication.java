@@ -88,6 +88,6 @@ public final class PhoenixApplication {
     }
 
     private static Collection<Class<? extends ViewHandle>> locateViews(Collection<String> packages) {
-        return new ViewLocator().pkg(packages).locate();
+        return new AnnotatedClassLocator<ViewHandle>().pkg(packages).locate(ViewHandle.class, View.class);
     }
 }

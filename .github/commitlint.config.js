@@ -20,10 +20,11 @@ module.exports = {
                 'ci',
                 'docs',
                 'feat',
+                'feat!',
                 'fix',
                 'perf',
                 'refactor',
-                'test',
+                'test'
             ],
         ],
         'type-case': [2, 'always', 'lower-case'],

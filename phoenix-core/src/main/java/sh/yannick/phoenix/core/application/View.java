@@ -9,7 +9,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target(TYPE_USE)
 @Retention(RUNTIME)
 public @interface View {
-    String title() default "Unknown view";
+    String title();
 
     String icon() default "";
 
